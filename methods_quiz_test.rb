@@ -45,10 +45,10 @@ class MethodsQuizTest < MiniTest::Test
 		assert_equal true, @m.two_as_one?(5, 5, 10)
 	end
 
-	def test_pig_latinify
-		assert_equal "ellohay", @m.pig_latinify("Hello")
-		assert_equal "oatgay", @m.pig_latinify("goat")
-		assert_equal "orldway", @m.pig_latinify("world")
-		assert_equal "appleway", @m.pig_latinify("apple")
-	end
+	# def test_pig_latinify
+	# 	assert_equal "ellohay", @m.pig_latinify("Hello")
+	# 	assert_equal "oatgay", @m.pig_latinify("goat")
+	# 	assert_equal "orldway", @m.pig_latinify("world")
+	# 	assert_equal "appleway", @m.pig_latinify("apple")
+	# end
 end
