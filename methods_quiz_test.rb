@@ -38,9 +38,9 @@ class MethodsQuizTest < MiniTest::Test
 	end
 
 	def test_two_as_one
-		assert_equal true, @m.tow_as_one?(1, 2, 3)
-		assert_equal false, @m.tow_as_one?(1, 2, 4)
-		assert_equal true, @m.tow_as_one?(3, 2, 1)
-		assert_equal true, @m.tow_as_one?(5, 5, 10)
+		assert_equal true, @m.two_as_one?(1, 2, 3)
+		assert_equal false, @m.two_as_one?(1, 2, 4)
+		assert_equal true, @m.two_as_one?(3, 2, 1)
+		assert_equal true, @m.two_as_one?(5, 5, 10)
 	end
 end
