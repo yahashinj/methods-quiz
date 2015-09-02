@@ -12,5 +12,15 @@ class MethodsQuizTest < MiniTest::Test
 	end
 
 	# TODO - write tests here
+	def test_has_teen
+		assert_equal true, @m.has_teen?(13)
+		assert_equal true, @m.has_teen?(19)
+		assert_equal false, @m.has_teen?(12)		
+	end
 
+	def test_not_string
+		assert_equal "not word", @m.not_string("word")
+		assert_equal "not meep", @m.not_string("meep")
+		assert_equal "not done", @m.not_string("done")
+	end
 end
