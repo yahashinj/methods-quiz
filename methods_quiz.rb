@@ -23,7 +23,15 @@ module MethodsQuiz
 		end
 	end
 	# TODO - write closer_to
-
+	def closer_to(guess1, guess2)
+		if guess1 == 10 || guess2 == 10
+			return 0
+		elsif (guess1 - 10).abs < (guess2 - 10).abs
+			return (guess1 - 10).abs
+		else
+			return (guess2 - 10).abs
+		end
+	end
 	# TODO - write two_as_one?
 
 	# TODO - write pig_latinify
