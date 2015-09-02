@@ -33,7 +33,17 @@ module MethodsQuiz
 		end
 	end
 	# TODO - write two_as_one?
-
+	def two_as_one?(num1, num2, num3)
+		if num1 + num2 == num3
+			return true
+		elsif num1 + num3 == num2
+			return true
+		elsif num2 + num3 == num1
+			return true
+		else
+			return false
+		end
+	end
 	# TODO - write pig_latinify
 
 end
