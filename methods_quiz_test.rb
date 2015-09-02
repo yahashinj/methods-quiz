@@ -23,4 +23,11 @@ class MethodsQuizTest < MiniTest::Test
 		assert_equal "not meep", @m.not_string("meep")
 		assert_equal "not done", @m.not_string("done")
 	end
+
+	def test_icy_hot
+		assert_equal true, @m.icy_hot(-10, 110)
+		assert_equal false, @m.icy_hot(0, 110)
+		assert_equal false, @m.icy_hot(-10, 100)
+		assert_equal true, @m.icy_hot(100, -10)
+	end
 end
